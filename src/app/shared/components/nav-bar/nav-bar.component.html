@@ -1,0 +1,5 @@
+<section class="border d-flex gap-3 justify-content-end">
+  <article class="justify-content-end" *ngFor="let btn of navigationService.availableRoutes">
+    <a [routerLink]="['/' + btn.route]" routerLinkActive="router-link-active" class="btn btn-primary">{{btn.name}}</a>
+  </article>
+</section>
